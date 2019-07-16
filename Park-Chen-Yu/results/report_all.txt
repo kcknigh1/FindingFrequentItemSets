@@ -1,0 +1,16 @@
+This is a collection of all the values.
+More details can be found in there individual result files.
+There were to many valus to show legibly in one file
+I used a hash table of size 4000 because it made Phase1 use about the same
+memory as the largest loop of the second phase using the A-Priori method.
+It apears that the Phase2 of PCY uses as much memory as A-Prori so the adding the bit vector
+did not help. It also made the PCY take more time to do the computations.
+
+S     Num Frquent    Num Frquent    Num Candidant  Phase1         Phase2         Total time     Size Singles   Size Pairs     Size Bit       Size Item Frq  Size Hash      
+Value Single         Pair           Pairs          Mem Usage      Mem Usage                     List P2        List P2        Vector P2      List P1        Table P1       
+
+2     1496           4604           33525          90268 bytes    88524 bytes    0.816 sec      6508 bytes     81984 bytes    32 bytes       8284 bytes     81984 bytes    
+5     351            281            11114          90268 bytes    6668 bytes     0.353 sec      1452 bytes     5184 bytes     32 bytes       8284 bytes     81984 bytes    
+10    100            0              3569           90268 bytes    628 bytes      0.211 sec      460 bytes      136 bytes      32 bytes       8284 bytes     81984 bytes    
+25    100            0              46             90268 bytes    628 bytes      0.178 sec      460 bytes      136 bytes      32 bytes       8284 bytes     81984 bytes    
+50    50             0              0              90268 bytes    436 bytes      0.108 sec      268 bytes      136 bytes      32 bytes       8284 bytes     81984 bytes    
